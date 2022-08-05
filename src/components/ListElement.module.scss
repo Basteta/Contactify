@@ -1,0 +1,83 @@
+.element {
+  background-color: #fff;
+  color: #000;
+  cursor: pointer;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #d8e1e5;
+  padding: 16px 0;
+  font-size: 18px;
+  width: 100%;
+
+  @media only screen and (max-width: 992px) {
+    font-size: 12px;
+  }
+
+  &:last-of-type {
+    border-bottom: none;
+    border-bottom-left-radius: 12px;
+  }
+
+  &:hover {
+    background-color: #d8e1e5;
+
+    &.overlay {
+      background-color: #AFC1C4;
+    }
+  }
+
+  &.overlay {
+    background-color :#CFD9D9;
+    border-bottom: 1px solid #AFC1C4;
+  }
+}
+
+.name {
+  display: flex;
+  width: 20%;
+  padding-left: 16px;
+
+  .short {
+      font-size: 0;
+
+    &:first-letter {
+      font-size: 18px;
+
+      @media only screen and (max-width: 992px) {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
+.city {
+  width: 20%;
+  padding-left: 16px;
+  word-break: break-word;
+}
+
+.icon {
+  width: 5%;
+  padding-left: 16px;
+}
+
+.email {
+  width: 25%;
+  word-break: break-word;
+}
+
+.phone {
+  width: 20%;
+  text-align: right;
+  padding-left: 16px;
+}
+
+.empty {
+  width: 10%;
+}
+
+.hidden {
+  display: none;
+}
